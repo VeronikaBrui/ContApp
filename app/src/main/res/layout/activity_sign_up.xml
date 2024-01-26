@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgrnd"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Registration Page"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:text="Please, fill the form:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:id="@+id/reg_email"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_man_24"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/reg_telephone"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="8dp"
+                android:hint="Mobile"
+                android:padding="8dp"
+                android:phoneNumber="true" />
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:id="@+id/reg_password"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:id="@+id/reg_confirmPass"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                android:hint="Confirm Password"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="8dp"/>
+
+            <Button
+                android:id="@+id/SignUpBtn"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/cardview_shadow_start_color"
+                android:text="Sign Up"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="25dp"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signInRedirect"
+                android:text="Already've been here? Sign In"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp">
+
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
